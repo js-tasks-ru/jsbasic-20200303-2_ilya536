@@ -4,6 +4,12 @@
  * @param {number} n index
  * @returns {number}
  */
+
+
 function sum(m, n) {
 
+  let summa = m + n;
+return summa;
+
 }
+
