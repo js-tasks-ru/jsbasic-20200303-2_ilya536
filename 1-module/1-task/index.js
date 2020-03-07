@@ -23,5 +23,6 @@ function factorial(n) {
 	     mul = mul * i ;
 	     
 	   }
+	   
 	   return mul ;
 	 }
