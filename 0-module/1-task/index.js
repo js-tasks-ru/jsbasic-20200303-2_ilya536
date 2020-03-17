@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Power
  * @param {number} m base
@@ -5,12 +7,23 @@
  * @returns {number}
  */
 
+/*function sum (a, b) {
 
-function sum(m, n) {
+  sum = + a +  +b;
 
-  let summa = m + n;
-
-return summa;
+alert (sum);
 
 }
 
+*/
+
+function sum (a,b) {
+
+	let suma = a+b;
+
+	return suma;
+
+}
+
+sum(1,1)
+sum(2,5)
