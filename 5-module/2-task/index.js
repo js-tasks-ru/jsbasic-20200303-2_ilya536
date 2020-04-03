@@ -30,16 +30,17 @@ function SortableTable(items) {
         <td>Salary</td>
         <td>City</td>
       </tr>
-  </thead>`)
+  </thead>
+  <tbody></tbody>`)
 
-  
-
+  let _tbody = _table.firstElementChild.nextElementSibling;
+  console.log (_tbody);
 //Cоздание строк таблицы с использованием исходных данных
 
 for (let i=0 ; i<items.length ; i++) {
 
   let _tr = document.createElement('tr');
-  _table.appendChild(_tr);
+  _tbody.appendChild(_tr);
 
   let _tdName = document.createElement('td');
   _tdName.innerHTML = items[i].name
@@ -71,12 +72,8 @@ let sumTr = _table.rows;
    * нужно выполнить сортировку (отсчет начинается от 0)
    * @param {boolean} desc - признак того, что сортировка должна идти в обратном порядке
    */
-   
-
-
+ 
 this.sort = (column, desc = false) => {
-
-
 
   let arr = Array.from(sumTr); 
   
@@ -110,14 +107,8 @@ this.sort = (column, desc = false) => {
   
   for (let i =0 ; i<arr.length; i++) {
 
-    _table.appendChild(arr[i]);
+    _tbody.appendChild(arr[i]);
 
    }
- 
-
-
-
-
-
-}
+ }
 }
